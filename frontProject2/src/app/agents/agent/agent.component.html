@@ -1,0 +1,94 @@
+<style>
+    .inpute{
+      position: relative;
+      padding-left:30px;
+    
+    
+    }
+    .input_icon{
+    position: absolute; /*important*/
+    top: 2px;
+    color: red; /*Tu peux changer ici*/
+    left: 2px;
+    font-size: 21px; /*Tu peux changer ici*/
+    width: 50px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     </style>
+
+
+ 
+
+    
+    
+    <div style="margin-left: 20px;">
+    
+    <form  class="form-group" #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" style="width: 400px;" >
+      <div class="form-group">
+    
+        <input class ="form-control" name="AgenteId" #AgenteId="ngModel" [(ngModel)]="service.formData3.AgenteId"  hidden  >
+      </div>
+        <hr>
+        
+    
+    
+    
+    
+        <div class="inpute">
+        <input  class="form-control" name="grade" #grade="ngModel" [(ngModel)]="service.formData3.grade"  placeholder=" Entrez votre Grade au prés du service de douane"  >
+        <span class="input_icon"> <i class="far fa-id-card"></i></span>
+        </div>
+        <hr>
+    
+    
+    
+        <div class="inpute">
+        <input  class="form-control" name="numCS" #numCS="ngModel" [(ngModel)]="service.formData3.numCS"  placeholder=" Entrez le numero de votre carte service"  >
+        <span class="input_icon"> <i class="far fa-id-card"></i></span>
+        </div>
+        <hr>
+
+
+        <div class="inpute">
+            <input  class="form-control" name="Cin" #Cin="ngModel" [(ngModel)]="service.formData3.Cin"  placeholder=" Entrez le numero de votre carte d'identité"  >
+            <span class="input_icon"> <i class="far fa-id-card"></i></span>
+            </div>
+        <hr>
+    
+        <div class="inpute">
+        <input  class="form-control" name="dateNaissance" #dateNaissance="ngModel" [(ngModel)]="service.formData3.dateNaissance"  placeholder=" Entrez votre da te de naissance"  >
+        <span class="input_icon"><i class="far fa-calendar-alt"></i></span>
+        </div>
+    
+        <hr>
+    
+    
+        <hr>
+    
+        <div class="inpute">
+        <input type="file"  class="form-control" name="photo" #photo="ngModel" [(ngModel)]="service.formData3.photo"  placeholder=" Entrez votre photo de profil"  >
+        <span class="input_icon"><i class="far fa-calendar-alt"></i></span>
+        </div>
+    
+        <hr>
+    
+    
+    
+        <button type="submit" class="btn btn-success" style="font-size: 1.5em;"> <i class="fas fa-database"></i> Enregistrer </button>
+    
+     
+      </form>
+    
+    
+    </div>
+    
+    
+    

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | User Profile</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+
+  <!-- Ionicons -->
+
+  <!-- Theme style -->
+
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper" style="background-color: rgb(223, 222, 231);">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: rgb(223, 222, 231);">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav"  style="background-color: rgb(223, 222, 231);">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+    <nav class="navbar navbar-light"s tyle="background-color: rgb(223, 222, 231);">
+  <button class="btn btn-danger my-2 my-sm-2" (click)="onLogoutF()" style="background-color: rgb(223, 222, 231);">Deconnection</button>
+</nav>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background-color: rgb(237, 237, 250);">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 >Profile</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">User Profile</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+
+            <!-- Profile Image -->
+            <div class="card card-primary card-outline">
+              <div class="card-body box-profile" style="background-color: rgb(223, 222, 231);">
+                <div class="text-center">
+                  <img class="profile-user-img img-fluid img-circle"  style="background-color: rgb(110, 110, 216);"
+                       src={{this.photo}}
+                       alt=pas de phto de profil>
+                </div>
+
+                <h3 class="profile-username text-center">{{this.Fullname}}</h3>
+
+                <p class="text-muted text-center" style="color:rgb(91, 130, 163);size:2 cm;" >Fournisseur</p>
+
+                <ul class="list-group list-group-unbordered mb-3"  style="color:rgb(91, 130, 163)">
+                  <li class="list-group-item" style="background-color: rgb(223, 222, 231);">
+                    <b>Date de Naissance</b> <a class="float-right">{{this.Date}}</a>
+                  </li>
+                  <li class="list-group-item" style="background-color: rgb(223, 222, 231);">
+                    <b>Email</b> <a class="float-right">{{this.Email}}</a>
+                  </li>
+                  <li class="list-group-item" style="background-color: rgb(223, 222, 231);">
+                    <b>Numero de Cin</b> <a class="float-right">{{this.Cin}}</a>
+                  </li>
+                </ul>
+
+
+              </div>
+
+
+            <!-- /.card -->
+
+
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!-- /.col -->
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header p-2" style="background-color: rgb(230, 230, 248);">
+                <ul class="nav nav-pills">
+                  <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab"  style="background-color: rgb(154, 193, 228); margin-left: 0.3cm;">Mes Factures</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab"  style="background-color: rgb(154, 193, 228); margin-left: 0.3cm;">Ajout Facture</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab"  style="background-color: rgb(154, 193, 228); margin-left: 0.3cm;">Parametres de compte</a></li>
+                </ul>
+              </div><!-- /.card-header -->
+              <div class="card-body" style="background-color: rgb(230, 230, 248);">
+                <div class="tab-content">
+                  <div class="active tab-pane" id="activity">
+                    <!-- Post -->
+                    <table class="container"  >
+
+                      <tr>
+                        <th scope="col">Nom Produit</th>
+                        <th scope="col"> prix unitaire</th>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Client</th>
+                        <th scope="col">Navire</th>
+
+
+
+
+
+                      </tr>
+                      <tr *ngFor="let pd of service.list5">
+
+
+
+
+                      <td >{{pd.NomProduit}}</td>
+                      <td >{{pd.PrixUnitaire}}</td>
+                      <td >{{pd.Quantite}}</td>
+                      <td >{{pd.Total}}</td>
+                    
+                      
+                      <td><i class="fas fa-angle-double-right" (click)="this.service.getImportateur(pd.importateurId)"></i></td>
+                    
+                      <td><i class="fas fa-angle-double-right" (click)="this.service3.getNavire(pd.navireId)"></i></td>
+                     
+
+
+
+
+
+                    
+
+
+
+                      </tr>
+                        </table>
+                        <table>
+                          <tr>
+                          <td *ngIf="this.service3.navire!=undefined">
+                                                     <div class="center" style="margin-left: 2cm;">
+                          <div class="property-card" >
+                            <a href="#">
+                              <div class="image">
+                                <img src="{{this.service3.navire.photo}} " alt="{{service3.fournisseur.photo}}"   style="width: 6cm; height:8cm ;" ng>
+                                <div class="property-image-title">
+                                  <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                </div>
+                              </div></a>
+                            <div class="property-description">
+                              <div *ngIf="service3.navire!=null">Nom Navire:{{service3.navire.nomNavire}} </div>  <br>
+                                                    <div *ngIf="service3.navire!=null"> Date Heure Arrivée:{{this.service3.navire.dateHeureEstime}}</div>  <br>
+                                                   
+                            </div>
+                            <a href="#">
+                              <div class="property-social-icons">
+                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                              </div>
+                            </a>
+                          </div>
+                        </div>        
+                        </td>
+
+
+
+
+                       
+                        <td *ngIf="this.service.formData2!=undefined">
+                        <div class="center" style="margin-left: 7cm;">
+                        
+                        <div class="property-card"  >
+                          <a href="#">
+                            <div class="image">
+                              <img *ngIf="service.formData2.photo!=null" src="{{this.service.formData2.photo}}" alt="{{service3.navire.photo}}"   style="width: 6cm; height:8cm ;" ng>
+                              <div class="property-image-title">
+                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                              </div>
+                            </div></a>
+                          <div class="property-description">
+                            <div *ngIf="service3.navire!=null">Nom Navire:{{service3.navire.nomNavire}} </div>  <br>
+                                                 <div *ngIf="service.formData2.Cin!=null">Cin : {{this.service.formData2.Cin}} </div>   <br>
+                                                   <div *ngIf="service.formData2.dateNaissance!=null">DATE Naissance:   {{this.service.formData2.dateNaissance}} </div> <br>
+                          </div>
+                          <a href="#">
+                            <div class="property-social-icons">
+                              <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                            </div>
+                          </a>
+                        </div>
+                        </div> 
+                        </td> 
+                        </tr>
+                        </table>
+                        
+
+                    
+
+                        
+                    
+                       
+                   
+                      
+                        
+                       
+                  </div>
+                  <!-- /.tab-pane -->
+
+                  <div class="tab-pane" id="timeline">
+                    <div style="margin-left: 20px;">
+
+                      <form  class="form-group" #form="ngForm" autocomplete="off" (submit)="onSubmit()" style="width: 400px;" >
+                        <div class="form-group">
+                  
+                          <div class="inpute">
+                  
+                  
+                            <input class ="form-control" name="FactureId" #FactureId="ngModel" [(ngModel)]="service.formData7.FactureId"  placeholder= " id"  hidden >
+                  
+                            <span class="input_icon"> <i class="far fa-user" ></i> </span>
+                  
+                            </div>
+                            <hr>
+                  
+                  
+                          <div class="inpute">
+                  
+                  
+                          <input class ="form-control" name="NomProduit" #NomProduit="ngModel" [(ngModel)]="service.formData7.NomProduit"  placeholder= " Entrez le nom du produit"  >
+                  
+                          <span class="input_icon"> <i class="far fa-user" ></i> </span>
+                  
+                          </div>
+                          <hr>
+                  
+                          <div class="inpute">
+                            <input   class="form-control" name="Quantite" #Quantite="ngModel" [(ngModel)]="service.formData7.Quantite"  placeholder=" Entrez la uantité relative"  >
+                            <span class="input_icon"><i class="far fa-calendar-alt"></i></span>
+                            </div>
+                            <hr>
+                  
+                          <div class="inpute">
+                          <input  class="form-control" name="PrixUnitaire" #PrixUnitaire="ngModel" [(ngModel)]="service.formData7.PrixUnitaire"  placeholder=" Entrez le prix unitaire"  >
+                          <span class="input_icon"> <i class="far fa-id-card"></i></span>
+                          </div>
+                          <hr>
+
+                          <div class="inpute">
+                            <input  class="form-control" name="Total" #Total="ngModel" [(ngModel)]="service.formData7.Total"  placeholder=" Entrez le total "  >
+                            <span class="input_icon"> <i class="far fa-id-card"></i></span>
+                            </div>
+                            <hr>
+                  
+                         
+
+                          <select class=" form-control" [(ngModel)]="xyz" (ngModelChange)='onActionSelected($event)' [ngModelOptions]="{standalone: true}">
+                            <option *ngFor="let sta of service.list" [ngValue]="sta.importateurId">{{sta.Cin}}</option>
+                            
+                            </select>
+                            <hr>
+
+                            <select class=" form-control" [(ngModel)]="xyz2" (ngModelChange)='onActionSelected2($event)' [ngModelOptions]="{standalone: true}">
+                              <option *ngFor="let sta of service.list4" [ngValue]="sta.navireId">{{sta.nomNavire}}</option>
+                              
+                              </select>
+                              <hr>
+
+                      
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                          <button type="submit" class="btn btn-success" style="font-size: 1.5em;"> <i class="fas fa-database"></i> Enregistrer </button>
+                  
+                        </div>
+                        </form>
+                  
+                  
+                    </div>
+                  
+
+                  
+
+                  </div>
+
+                  <!-- /.tab-pane -->
+
+
+
+                 
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div><!-- /.card-body -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+</body>
+</html>

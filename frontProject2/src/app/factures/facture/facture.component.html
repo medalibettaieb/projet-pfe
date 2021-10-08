@@ -1,0 +1,86 @@
+<style>
+  .inpute{
+    position: relative;
+    padding-left:30px;
+
+
+  }
+  .input_icon{
+  position: absolute; /*important*/
+  top: 2px;
+  color: red; /*Tu peux changer ici*/
+  left: 2px;
+  font-size: 21px; /*Tu peux changer ici*/
+  width: 50px;
+  }
+
+
+
+
+
+
+
+
+
+   </style>
+
+
+  <div style="margin-left: 20px;">
+
+    <form  class="form-group" #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" style="width: 400px;" >
+      <div class="form-group">
+
+        <div class="inpute">
+
+
+          <input class ="form-control" name="FactureId" #FactureId="ngModel" [(ngModel)]="service.formData.FactureId"  placeholder= " id"  hidden >
+
+          <span class="input_icon"> <i class="far fa-user" ></i> </span>
+
+          </div>
+          <hr>
+
+
+        <div class="inpute">
+
+
+        <input class ="form-control" name="NomProduit" #NomProduit="ngModel" [(ngModel)]="service.formData.NomProduit"  placeholder= " Entrez le nom du produit"  >
+
+        <span class="input_icon"> <i class="far fa-user" ></i> </span>
+
+        </div>
+        <hr>
+
+        <div class="inpute">
+          <input   class="form-control" name="Quantite" #Quantite="ngModel" [(ngModel)]="service.formData.Quantite"  placeholder=" Entrez la uantité relative"  >
+          <span class="input_icon"><i class="far fa-calendar-alt"></i></span>
+          </div>
+          <hr>
+
+        <div class="inpute">
+        <input  class="form-control" name="PrixUnitaire" #PrixUnitaire="ngModel" [(ngModel)]="service.formData.PrixUnitaire"  placeholder=" Entrez le prix unitaire"  >
+        <span class="input_icon"> <i class="far fa-id-card"></i></span>
+        </div>
+        <hr>
+
+        <input class ="form-controle" name="importateurId" #importateurId="ngModel" [(ngModel)]="service.formData.importateurId" hidden >
+        <hr>
+
+
+
+
+
+
+
+
+
+
+        <button type="submit" class="btn btn-success" style="font-size: 1.5em;"> <i class="fas fa-database"></i> Enregistrer </button>
+
+      </div>
+      </form>
+
+
+  </div>
+
+

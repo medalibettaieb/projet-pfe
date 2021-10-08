@@ -1,0 +1,63 @@
+
+
+
+	
+	
+
+ <form class="login100-form validate-form"  #form='ngForm' autocomplete="off"  style="width: 400px;" (submit)="onSubmit(form)" style="margin: auto;">
+  <span class="login100-form-title p-b-43">
+    Account Login
+  </span>
+
+
+    <div class="wrap-input100 rs1 validate-input" data-validate = "Username is required">
+
+      
+      <input class="input100" #UserName="ngModel" name="UserName"  [(ngModel)]="formModel.UserName" required >
+      <span class="label-input100">Username</span>
+
+
+
+     </div>
+
+     <div class="wrap-input100 rs1 validate-input" data-validate = "Username is required">
+
+     
+      <input class="input100" type="password" #Password="ngModel" name="Password"  [(ngModel)]="formModel.Password"  required  >
+      <span class="label-input100">Password</span>
+
+
+
+     </div>
+   
+
+      <div class="container-login100-form-btn">
+
+        <button type="submit" class="login100-form-btn" > Login</button>
+
+    
+
+
+
+
+
+     </div>
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+	
+
+	
+	
+
+
